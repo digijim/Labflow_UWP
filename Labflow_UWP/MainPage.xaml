@@ -1,0 +1,242 @@
+﻿<Page
+    x:Class="Labflow_UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Labflow_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.ColumnSpan="12" Background="#f8f9fa"/>
+        <StackPanel Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock Foreground="Black" FontSize="20" Text="Labflow" Margin="20,5,10,5"/>
+            <TextBox Width="200" PlaceholderText="Search" VerticalAlignment="Center"/>
+            <Button>
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE721;"/>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="12" HorizontalAlignment="Right">
+            <TextBlock Foreground="Gray" FontSize="16" Text="Admin" Margin="0,10,20,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="6" VerticalAlignment="Center" Orientation="Horizontal">
+            <TextBlock Foreground="Black" FontSize="30" Text="Status" Margin="20,10,20,10"/>
+            <TextBlock Foreground="Gray" FontSize="25" Text="(Today's date here)" VerticalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="12" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button>
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE00E;"/>
+            </Button>
+            <Button Margin="10,0,10,0">
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE00F;"/>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Padding="10,0,0,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="25" Height="40" Margin="20,0,0,0" Text="Intake"/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Orders"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Rolls"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Frames"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Padding="0,0,10,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="20" Height="40" Margin="20,0,0,0" Text=""/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="30"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="275"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="4260"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="2" Padding="10,0,0,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="25" Height="40" Margin="20,0,0,0" Text="Scans"/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Orders"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Rolls"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Frames"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="6" Grid.ColumnSpan="2" Padding="0,0,10,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="20" Height="40" Margin="20,0,0,0" Text=""/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="30"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="275"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="4260"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="2" Padding="10,0,0,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="25" Height="40" Margin="20,0,0,0" Text="Uploads"/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Orders"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Rolls"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Frames"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="10" Grid.ColumnSpan="2" Padding="0,0,10,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="20" Height="40" Margin="20,0,0,0" Text=""/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="30"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="275"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="4260"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Padding="10,0,0,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="25" Height="40" Margin="20,0,0,0" Text="Turnaraound"/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Year"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="2017"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="2016"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="2015"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Padding="0,0,0,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="25" Height="40" Margin="20,0,0,0" Text=""/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Minimum"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="1"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="7"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="1"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="4" Padding="0,0,0,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="25" Height="40" Margin="20,0,0,0" Text=""/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Average"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="1.71"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="8.2"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="2.06"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="4" Padding="0,0,10,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="25" Height="40" Margin="20,0,0,0" Text=""/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Maximum"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="2"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="9"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="7"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.ColumnSpan="4" Padding="10,0,0,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="25" Height="40" Margin="20,0,0,0" Text="Queues"/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="20,0,0,0" Text=" "/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Scanning"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Cutting"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Color Correcting"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Final Checking"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Uploading"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="2" Padding="0,0,0,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="25" Height="40" Margin="20,0,0,0" Text=""/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Orders"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="34"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="15"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="17"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="9"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="0"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="6" Grid.ColumnSpan="2" Padding="0,0,0,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="25" Height="40" Margin="20,0,0,0" Text=""/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Rolls"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="34"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="15"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="17"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="9"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="0"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="4" Padding="0,0,10,0">
+            <StackPanel Orientation="Vertical">
+                <Border Background="LightGray">
+                    <TextBlock FontSize="25" Height="40" Margin="20,0,0,0" Text=""/>
+                </Border>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="20,0,0,0" Text="Frames"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="3400"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="1500"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="1700"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="900"/>
+                    <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="20,0,0,0" Text="0"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
